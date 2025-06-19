@@ -18,7 +18,7 @@ export default function InfoBox({info}){
     return (
       <div>        
         
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, backgroundColor: "#f0f0f0", borderColor: "#ccc", boxShadow: 3 }}>
       <CardMedia
         sx={{ height: 140 }}
         image={info.humidity > 80 ? rainyImage : info.temp > 20 ? SummerImage : winterImage}
